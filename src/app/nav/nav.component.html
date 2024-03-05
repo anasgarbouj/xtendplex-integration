@@ -1,0 +1,28 @@
+<div class="hero-section">
+    <header class="hero-header">
+      <h1 class="hero-brand">LOGO LAND</h1>
+      <button class="menu-toggle" (click)="toggleNav()" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <nav class="hero-nav" [class.show]="navVisible">
+        <a (click)="navigate('home')">Home</a>
+        <a (click)="navigate('features')">Product</a>
+        <a (click)="navigate('about')">About</a>
+        <a (click)="navigate('pricing')">Pricing</a>
+        <a (click)="navigate('contact')">Contact</a>
+      </nav>
+      
+      
+      <div class="social-icons">
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+      </div>
+    </header>
+    <div class="hero-body">
+      <h2>The best products <br>start with an idea</h2>
+      <p>Lorem ipsum dolor sit amet consectetur. Vitae <br> donec varius placerat sed auctor enim feugiat.</p>
+      <button class="hero-button">Try For Free</button>
+    </div>
+  </div>
+  

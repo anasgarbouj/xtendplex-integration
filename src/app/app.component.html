@@ -1,0 +1,7 @@
+<app-nav (navigateToSection)="navigateTo($event)"></app-nav>
+<!-- Rest of your components -->
+<div #features><app-features></app-features></div>
+<div #about><app-about></app-about></div>
+<div #pricing><app-pricing></app-pricing></div>
+<div #contact><app-contact></app-contact></div>
+<app-footer (navigateToSection)="navigateTo($event)"></app-footer>

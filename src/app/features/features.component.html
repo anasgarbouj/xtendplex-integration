@@ -1,0 +1,27 @@
+<div class="features-container">
+    <h2 style="text-align: center;">Features</h2>
+    <p class="features-intro" style="text-align: center;">Lorem ipsum dolor sit amet consectetur. Vitae <br> donec varius placerat sed auctor enim feugiat.</p>
+    
+   
+    <div class="video-container mobile-video">
+      <img src="/assets/vid.png" alt="Video Thumbnail">
+     
+    </div>
+    
+    <div class="features-list">
+     
+      <div class="feature" *ngFor="let feature of features">
+        <div class="icon-container">
+          <span class="icon"></span>
+        </div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description.part1 }}<br>{{ feature.description.part2 }}</p>
+      </div>
+    </div>
+  
+    <!-- This div will only be visible on desktop -->
+    <div class="video-container desktop-video">
+      <img src="/assets/vid.png" alt="Video Thumbnail">
+    </div>
+  </div>
+  

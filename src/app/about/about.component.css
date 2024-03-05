@@ -1,0 +1,140 @@
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+}
+
+.text-section {
+    text-align: center;
+}
+
+.text-section h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.text-section p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.try-free-btn {
+    padding: 10px 20px;
+    background-color: #06F;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.try-free-btn:hover {
+    background-color: #0056b3;
+}
+
+.image-section {
+    max-width: 500px;
+}
+
+.image-section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+.subscription-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+}
+
+.graphics-container {
+    flex: 1;
+}
+.graphics-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-container {
+    flex: 1;
+    text-align: center;
+}
+
+.content-container h3 {
+    color: #888;
+    font-weight: normal;
+}
+
+.content-container h1 {
+    color: #000;
+    margin: 10px 0;
+}
+
+.content-container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscription-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #06F;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscription-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .subscription-section {
+        flex-direction: column;
+    }
+
+    .content-container {
+        text-align: center;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscription-form input,
+    .subscription-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

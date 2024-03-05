@@ -1,0 +1,92 @@
+.features-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .features-container h2 {
+        text-align: center;
+    }
+    
+    .features-container .features-intro {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .feature {
+        flex: 1;
+        margin: 0 10px;
+        text-align: center;
+    }
+    
+    .icon-container {
+        background-color: #0056b3;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .icon {
+        width: 30px;
+        height: 30px;
+        background-image: url('/assets/mdi_drawing.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .mobile-video {
+        display: none;
+    }
+    
+    .desktop-video {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video-container img{
+        height: 500px;
+    }
+    
+    @media (max-width: 768px) {
+        .features-list {
+            display: block;
+        }
+        
+        .mobile-video {
+            display: block;
+        }
+    
+        .desktop-video {
+            display: none;
+        }
+        .video-container img {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .features-container h2, .features-container .features-intro {
+            text-align: left;
+        }
+    
+        .features-list {
+            justify-content: space-between;
+        }
+    
+        .feature {
+            width: calc(33.333% - 20px);
+            margin: 0 10px;
+        }
+    }
